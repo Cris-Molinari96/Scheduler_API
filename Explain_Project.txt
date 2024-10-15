@@ -1,0 +1,35 @@
+Nel progetto abbiamo un database che viene creato ogni volta che il programma viene avviato,
+sono stati creati due tipi diversi di scheduler, uno tipo che viene eseguito all'avvio dell'applicazione il secondo
+viene gestito tramite l'esposizione di end-point, per ora possiamo:
+1. Effettuare le CRUD sul job
+2.  Richiamare uno job tramite il controller Scheduler per poter eseguire/fermare o ottenere uno status sullo o sugli scheduler attivi.
+
+
+
+
+Quando si aggiunge un job, questo viene avviato direttamente con la conseguenze aggiunta nella mappa,
+Eseguire tutti i job che sono nel database,
+
+
+Swagger su ogni endpoint fare la documentazione
+
+application.properties:
+springdoc.swagger-ui.path=/swagger-ui.html
+springdoc.swagger-ui.url=/frpcWs/v3/api-docs
+springdoc.swagger-ui.config-url= /frpcWs/v3/api-docs/swagger-config
+springdoc.packagesToScan=it.infocamere.frpc.frpc.frpcWs.controller
+springdoc.swagger-ui.disable-swagger-default-url=true
+api.version= 1.0.0
+
+@Configuration
+public class OpenApiConfig {
+
+    @Bean
+    public OpenAPI customOpenAPI() {
+        return new OpenAPI()
+                .components(new Components())
+                .info(new Info().title("Framework pratiche camerali (API)")
+                .version("2.0")
+                .description("Frpc è un framwork che espone RESTful API. I suoi ws sono utilizzati in particolare dalla nuova suite del Commercio Estero (https://commercioestero.camcom.it)"));
+    }
+

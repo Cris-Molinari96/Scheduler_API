@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestHistoryConfig">
+    <option name="historyList">
+      <list>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="name" value="Ottieni la lista dei job in esecuzione" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="Ottieni la lista dei job in esecuzione" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{&quot;monthlyAnalysis&quot;:&quot;In esecuzione&quot;,&quot;dailyReport&quot;:&quot;In esecuzione&quot;,&quot;jobName_ze9oc&quot;:&quot;In esecuzione&quot;,&quot;infoCamereReport&quot;:&quot;In esecuzione&quot;,&quot;weeklyBackup&quot;:&quot;In esecuzione&quot;},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="stopJob" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Ferma l'esecuzione di un job" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="stopJob" />
+              <option name="methodDescription" value="Ferma l'esecuzione di un job" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/stop/{jobName}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;jobName&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;jobName_1cjig&quot;}]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/stop/frpcReport" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/stop/frpcReport&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Fermato con successo&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/stop/frpcReport" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="name" value="Ottieni la lista dei job in esecuzione" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="Ottieni la lista dei job in esecuzione" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{&quot;monthlyAnalysis&quot;:&quot;In esecuzione&quot;,&quot;dailyReport&quot;:&quot;In esecuzione&quot;,&quot;jobName_ze9oc&quot;:&quot;In esecuzione&quot;,&quot;frpcReport&quot;:&quot;In esecuzione&quot;,&quot;infoCamereReport&quot;:&quot;In esecuzione&quot;,&quot;weeklyBackup&quot;:&quot;In esecuzione&quot;},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="insertAndExecuteJob" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job con esecuzione automatica" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;frpcReport&quot;,&#10;  &quot;cron&quot;: &quot;cron_m0vzo&quot;,&#10;  &quot;apiURL&quot;: &quot;apiURL_i6rws&quot;,&#10;  &quot;baseURL&quot;: &quot;baseURL_grqus&quot;&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.JobController" />
+              <option name="jsonDocument" value="{&#10;  &quot;id&quot;: &quot;No comment,Value =1&quot;,&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_btw9h&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_m0vzo&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_i6rws&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_grqus&quot;&#10;}" />
+              <option name="method" value="insertAndExecuteJob" />
+              <option name="methodDescription" value="Crea un job con esecuzione automatica" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/create-and-execute-job" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/create-and-execute-job" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/create-and-execute-job&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 94&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;frpcReport&quot;,&quot;cron&quot;:&quot;cron_m0vzo&quot;,&quot;baseURL&quot;:&quot;baseURL_grqus&quot;,&quot;apiURL&quot;:&quot;apiURL_i6rws&quot;}&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Job created successfully&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/create-and-execute-job" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="name" value="Ottieni la lista dei job in esecuzione" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="Ottieni la lista dei job in esecuzione" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{&quot;monthlyAnalysis&quot;:&quot;In esecuzione&quot;,&quot;dailyReport&quot;:&quot;In esecuzione&quot;,&quot;jobName_ze9oc&quot;:&quot;In esecuzione&quot;,&quot;infoCamereReport&quot;:&quot;In esecuzione&quot;,&quot;weeklyBackup&quot;:&quot;In esecuzione&quot;},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="startJob" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Avvia un singolo job" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="startJob" />
+              <option name="methodDescription" value="Avvia un singolo job" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/start/{jobId}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;jobId&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/start/1" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/start/1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{&quot;monthlyAnalysis&quot;:&quot;In esecuzione&quot;,&quot;dailyReport&quot;:&quot;In esecuzione&quot;,&quot;jobName_ze9oc&quot;:&quot;In esecuzione&quot;,&quot;infoCamereReport&quot;:&quot;In esecuzione&quot;,&quot;weeklyBackup&quot;:&quot;In esecuzione&quot;},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/start/1" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="name" value="Ottieni la lista dei job in esecuzione" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="Ottieni la lista dei job in esecuzione" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{&quot;monthlyAnalysis&quot;:&quot;In esecuzione&quot;,&quot;dailyReport&quot;:&quot;In esecuzione&quot;,&quot;jobName_ze9oc&quot;:&quot;In esecuzione&quot;,&quot;infoCamereReport&quot;:&quot;In esecuzione&quot;,&quot;weeklyBackup&quot;:&quot;In esecuzione&quot;},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="name" value="Ottieni la lista dei job in esecuzione" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="Ottieni la lista dei job in esecuzione" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{&quot;monthlyAnalysis&quot;:&quot;In esecuzione&quot;,&quot;dailyReport&quot;:&quot;In esecuzione&quot;,&quot;jobName_ze9oc&quot;:&quot;In esecuzione&quot;,&quot;infoCamereReport&quot;:&quot;In esecuzione&quot;,&quot;weeklyBackup&quot;:&quot;In esecuzione&quot;},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="startJob" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Avvia un singolo job" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="startJob" />
+              <option name="methodDescription" value="Avvia un singolo job" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/start/{jobId}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;jobId&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/start/1" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/start/1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Scheduler avviato infoCamereReport&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/start/1" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="name" value="Ottieni la lista dei job in esecuzione" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="Ottieni la lista dei job in esecuzione" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{&quot;monthlyAnalysis&quot;:&quot;In esecuzione&quot;,&quot;dailyReport&quot;:&quot;In esecuzione&quot;,&quot;jobName_ze9oc&quot;:&quot;In esecuzione&quot;,&quot;infoCamereReport&quot;:&quot;In esecuzione&quot;,&quot;weeklyBackup&quot;:&quot;In esecuzione&quot;},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="listJobs" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{&quot;monthlyAnalysis&quot;:&quot;In esecuzione&quot;,&quot;dailyReport&quot;:&quot;In esecuzione&quot;,&quot;jobName_ze9oc&quot;:&quot;In esecuzione&quot;,&quot;infoCamereReport&quot;:&quot;In esecuzione&quot;,&quot;weeklyBackup&quot;:&quot;In esecuzione&quot;},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="listJobs" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{&quot;dailyReport&quot;:&quot;In esecuzione&quot;,&quot;monthlyAnalysis&quot;:&quot;In esecuzione&quot;,&quot;jobName_ze9oc&quot;:&quot;In esecuzione&quot;,&quot;infoCamereReport&quot;:&quot;In esecuzione&quot;,&quot;weeklyBackup&quot;:&quot;In esecuzione&quot;},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="insertAndExecuteJob" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;id&quot;: 1,&#10;  &quot;jobName&quot;: &quot;infoCamereReport&quot;,&#10;  &quot;cron&quot;: &quot;cron_659dd&quot;,&#10;  &quot;apiURL&quot;: &quot;apiURL_xly4n&quot;,&#10;  &quot;baseURL&quot;: &quot;baseURL_1y2au&quot;&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.JobController" />
+              <option name="jsonDocument" value="{&#10;  &quot;id&quot;: &quot;No comment,Value =1&quot;,&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_v3np4&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_659dd&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_xly4n&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_1y2au&quot;&#10;}" />
+              <option name="method" value="insertAndExecuteJob" />
+              <option name="methodDescription" value="insertAndExecuteJob" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/create-and-execute-job" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/create-and-execute-job" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/create-and-execute-job&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 107&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;infoCamereReport&quot;,&quot;cron&quot;:&quot;cron_659dd&quot;,&quot;baseURL&quot;:&quot;baseURL_1y2au&quot;,&quot;apiURL&quot;:&quot;apiURL_xly4n&quot;,&quot;id&quot;:1}&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Job created successfully&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/create-and-execute-job" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="listJobs" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{&quot;dailyReport&quot;:&quot;In esecuzione&quot;,&quot;monthlyAnalysis&quot;:&quot;In esecuzione&quot;,&quot;jobName_ze9oc&quot;:&quot;In esecuzione&quot;,&quot;weeklyBackup&quot;:&quot;In esecuzione&quot;},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="executeAllJobs" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="executeAllJobs" />
+              <option name="methodDescription" value="executeAllJobs" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/execute-all-jobs" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/execute-all-jobs" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/execute-all-jobs&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Jobs eseguiti&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/execute-all-jobs" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="listJobs" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="unregisterAllJobs" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="unregisterAllJobs" />
+              <option name="methodDescription" value="unregisterAllJobs" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/stop-all-jobs" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/stop-all-jobs" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/stop-all-jobs&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Jobs cancellati&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/stop-all-jobs" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="listJobs" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{&quot;dailyReport&quot;:&quot;In esecuzione&quot;,&quot;monthlyAnalysis&quot;:&quot;In esecuzione&quot;,&quot;jobName_ze9oc&quot;:&quot;In esecuzione&quot;,&quot;weeklyBackup&quot;:&quot;In esecuzione&quot;},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="listJobs" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{&quot;dailyReport&quot;:&quot;In esecuzione&quot;},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="listJobs" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="listJobs" />
+              <option name="methodDescription" value="listJobs" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/list" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/list" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/list&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:{},&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/list" />
+        </ResponseHistory>
+      </list>
+    </option>
+  </component>
+</project>

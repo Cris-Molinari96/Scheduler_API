@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestCurrentParamGroup">
+    <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+    <option name="filePath" value="" />
+    <option name="method" value="listJobs" />
+    <option name="methodDescription" value="Ottieni la lista dei job in esecuzione" />
+    <option name="module" value="Scheduler_2.0" />
+    <option name="originUrl" value="/api/scheduler/list" />
+    <option name="responseParamMap">
+      <map>
+        <entry key="return">
+          <value>
+            <Object />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+    <option name="url" value="/api/scheduler/list" />
+  </component>
+</project>
