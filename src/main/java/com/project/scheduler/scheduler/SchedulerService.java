@@ -8,6 +8,7 @@ import org.springframework.scheduling.support.CronTrigger;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ScheduledFuture;
 
@@ -76,6 +77,18 @@ public class SchedulerService {
         }
     }
 
+    public boolean startAllJobs() {
+        List<Job> jobsList = jobService.getAllJobs();
+        if (jobsList.size() != 0) {
+            for (Job job : jobsList) {
+                scheduleJob(job);
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     /* private Job searchJob(Long jobId){
          return executeJob( jobService.getJob(jobId));
      }*/
@@ -85,12 +98,26 @@ public class SchedulerService {
             boolean cancelled = scheduledTask.cancel(true);
             if (cancelled) {
                 jobRegistry.unregisterJob(jobName);
+                System.out.println("Job '" + jobName + "' fermato con successo.");
+            } else {
+                System.out.println("Impossibile fermare il job '" + jobName + "'. Potrebbe essere già completato o in esecuzione.");
             }
             return cancelled;
+        } else {
+            System.out.println("Job '" + jobName + "' non trovato nel registro.");
+            return false;
         }
-
-        return false;
     }
 
-
+    public boolean stopAllJob() {
+        Map<String, ScheduledFuture<?>> allJobs = jobRegistry.getScheduledJobs();
+        if (!allJobs.isEmpty()) {
+            for (Map.Entry<String, ScheduledFuture<?>> entry : allJobs.entrySet()) {
+                stopJob(entry.getKey());
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

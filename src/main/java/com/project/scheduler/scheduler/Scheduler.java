@@ -7,8 +7,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Component
-@Setter
-@Getter
 public class Scheduler {
 
     public DynamicJobScheduler dynamicJobScheduler;
@@ -18,13 +16,13 @@ public class Scheduler {
         this.dynamicJobScheduler = dynamicJobScheduler;
     }
 
-
-    /* * Scheduler di default, avviata l'applicazione parte anche questo
-     * Qui e dove possiamo inserire tutti gli scheduler e verranno avviati in automatico.
-     * Dynamic Scheduler recupera tutti i JOB dal database ed esegue la logica per elaborarli */
-    @Scheduled(fixedRate = 100000)
     public void scheduledTask() {
         dynamicJobScheduler.scheduleJobs();
     }
+    /* * Scheduler di default, avviata l'applicazione parte anche questo
+     * Qui e dove possiamo inserire tutti gli scheduler e verranno avviati in automatico.
+     * Dynamic Scheduler recupera tutti i JOB dal database ed esegue la logica per elaborarli */
+    // @Scheduled(fixedRate = 100000)
+
 
 }

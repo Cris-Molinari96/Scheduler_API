@@ -27,26 +27,22 @@ public class DynamicJobScheduler {
     }
 
     // Recupero di tutti i JOB nel database e li avvia
-    @PostConstruct
+   /* @PostConstruct
     public void scheduleJobs() {
-        List<Job> jobs = jobService.getAllJobs();
-        for (Job job : jobs) {
-            executeJob(job);
-        }
-    }
+    }*/
 
     // Esecuzione dei singoli job, questo metodo viene utilizzato per eseguire i JOB anche negli altri controller
     // no duplicazione di codice
-    public String executeJob(Job job) {
-        if (job != null) {
-            ScheduledFuture<?> scheduledTask = taskScheduler.schedule(
-                    () -> executeJob(job),
-                    new CronTrigger("*/100 * * * * *")
-            );
-            jobRegistry.registerJob(job.getJobName(), scheduledTask);
-            return "Richiesta " + job.getApiURL();
-        }else{
-            return null;
-        }
-    }
+//    public String executeJob(Job job) {
+//        if (job != null) {
+//            ScheduledFuture<?> scheduledTask = taskScheduler.schedule(
+//                    () -> executeJob(job),
+//                    new CronTrigger("*/100 * * * * *")
+//            );
+//            jobRegistry.registerJob(job.getJobName(), scheduledTask);
+//            return "Richiesta " + job.getApiURL();
+//        }else{
+//            return null;
+//        }
+//    }
 }

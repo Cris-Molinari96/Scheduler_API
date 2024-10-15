@@ -1,7 +1,6 @@
 package com.project.scheduler.controller;
 
 import com.project.scheduler.entity.Job;
-import com.project.scheduler.scheduler.DynamicJobScheduler;
 import com.project.scheduler.scheduler.JobRegistry;
 import com.project.scheduler.scheduler.SchedulerService;
 import com.project.scheduler.services.JobService;
@@ -21,24 +20,16 @@ import java.util.concurrent.ScheduledFuture;
 @RequestMapping("/api/scheduler")
 public class SchedulerController {
 
-    private final TaskScheduler taskScheduler;
     private final SchedulerService schedulerService;
-    private ScheduledFuture<?> scheduledTask;
     public JobService jobService;
     public ResponseHttp responseHttp;
-    private DynamicJobScheduler dynamicJobScheduler;
-    private JobRegistry jobRegistry;
 
     @Autowired
     public SchedulerController(
             TaskScheduler taskScheduler,
             JobService jobService,
-            DynamicJobScheduler dynamicJobScheduler,
             JobRegistry jobRegistry, SchedulerService schedulerService) {
-        this.taskScheduler = taskScheduler;
         this.jobService = jobService;
-        this.dynamicJobScheduler = dynamicJobScheduler;
-        this.jobRegistry = jobRegistry;
         this.schedulerService = schedulerService;
     }
 
@@ -60,9 +51,15 @@ public class SchedulerController {
     @Operation(summary = "Ottieni la lista dei job in esecuzione")
     public ResponseEntity<ResponseHttp> listJobs() {
         Map<String, String> jobStatus = schedulerService.getStatusAllJobs();
-        responseHttp = new ResponseHttp();
-        responseHttp.setDataSource(jobStatus);
-        return new ResponseEntity<>(responseHttp, HttpStatus.OK);
+        if (jobStatus.isEmpty()) {
+            responseHttp = new ResponseHttp();
+            responseHttp.setMessage("Nessun job in esecuzione");
+            return new ResponseEntity<>(responseHttp, HttpStatus.OK);
+        } else {
+            responseHttp = new ResponseHttp();
+            responseHttp.setDataSource(jobStatus);
+            return new ResponseEntity<>(responseHttp, HttpStatus.OK);
+        }
     }
 
     // Start Job
@@ -100,7 +97,7 @@ public class SchedulerController {
     @Operation(summary = "Esegui tutti i jobs memorizzati nel database")
     public ResponseEntity<ResponseHttp> executeAllJobs() {
         responseHttp = new ResponseHttp();
-        dynamicJobScheduler.scheduleJobs();
+        schedulerService.startAllJobs();
         responseHttp.setMessage("Jobs eseguiti");
         return new ResponseEntity<ResponseHttp>(responseHttp, HttpStatus.OK);
     }
@@ -108,14 +105,15 @@ public class SchedulerController {
     @PostMapping("/stop-all-jobs")
     @Operation(summary = "Ferma tutti i jobs")
     public ResponseEntity<ResponseHttp> unregisterAllJobs() {
-        responseHttp = new ResponseHttp();
-        Boolean allJobsCancelled = jobRegistry.unregisterAllJobs();
-        if (allJobsCancelled) {
-            responseHttp.setMessage("Jobs cancellati");
+        boolean operationConfirm = schedulerService.stopAllJob();
+        if (operationConfirm) {
+            responseHttp = new ResponseHttp();
+            responseHttp.setMessage("Tutti i jobs sono stati arrestati!");
             return new ResponseEntity<>(responseHttp, HttpStatus.OK);
         } else {
-            responseHttp.setMessage("Si è verificato un errore nell'cancellare tutti i jobs");
-            return new ResponseEntity<>(responseHttp, HttpStatus.OK);
+            responseHttp = new ResponseHttp();
+            responseHttp.setMessage("Si è verificato un errore");
+            return new ResponseEntity<>(responseHttp, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 }
