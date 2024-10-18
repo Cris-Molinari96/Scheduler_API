@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+    <option name="className" value="com.project.scheduler.controller.JobRegistryController" />
     <option name="filePath" value="" />
-    <option name="method" value="listJobs" />
-    <option name="methodDescription" value="Ottieni la lista dei job in esecuzione" />
+    <option name="method" value="getResponseJob" />
     <option name="module" value="Scheduler_2.0" />
-    <option name="originUrl" value="/api/scheduler/list" />
+    <option name="originUrl" value="/get-response/{jobName}" />
+    <option name="pathParamMap">
+      <map>
+        <entry key="jobName">
+          <value>
+            <Object />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="responseParamMap">
       <map>
         <entry key="return">
@@ -17,6 +25,6 @@
       </map>
     </option>
     <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
-    <option name="url" value="/api/scheduler/list" />
+    <option name="url" value="/get-response/jobName_jfm6a" />
   </component>
 </project>

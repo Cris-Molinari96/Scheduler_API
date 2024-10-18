@@ -13,7 +13,6 @@ public class ResponseHttp {
 
     private Object dataSource;
     private List<?> userCompany;
-
     private String message;
     private String code;
 

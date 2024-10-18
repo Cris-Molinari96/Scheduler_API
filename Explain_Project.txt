@@ -4,32 +4,17 @@ viene gestito tramite l'esposizione di end-point, per ora possiamo:
 1. Effettuare le CRUD sul job
 2.  Richiamare uno job tramite il controller Scheduler per poter eseguire/fermare o ottenere uno status sullo o sugli scheduler attivi.
 
+job configuration
+creare un job senza salvarlo nel database nello scheduler
+catturare la risposta e salvarla nel database
 
 
+Un controller che espone un api al quale gli viene passato un oggetto json,
+che gli applica un controllo e lo passa al service.
+il service estrae le informazioni e crea uno scheduler senza salvarlo nel database ma
+che viene registrato nella memoria e quindi c'è poi la possibilità di tenerne traccia.
 
-Quando si aggiunge un job, questo viene avviato direttamente con la conseguenze aggiunta nella mappa,
-Eseguire tutti i job che sono nel database,
 
-
-Swagger su ogni endpoint fare la documentazione
-
-application.properties:
-springdoc.swagger-ui.path=/swagger-ui.html
-springdoc.swagger-ui.url=/frpcWs/v3/api-docs
-springdoc.swagger-ui.config-url= /frpcWs/v3/api-docs/swagger-config
-springdoc.packagesToScan=it.infocamere.frpc.frpc.frpcWs.controller
-springdoc.swagger-ui.disable-swagger-default-url=true
-api.version= 1.0.0
-
-@Configuration
-public class OpenApiConfig {
-
-    @Bean
-    public OpenAPI customOpenAPI() {
-        return new OpenAPI()
-                .components(new Components())
-                .info(new Info().title("Framework pratiche camerali (API)")
-                .version("2.0")
-                .description("Frpc è un framwork che espone RESTful API. I suoi ws sono utilizzati in particolare dalla nuova suite del Commercio Estero (https://commercioestero.camcom.it)"));
-    }
-
+Rest db
+TRUNCATE TABLE JOB_CONFIGURATIONS;
+ALTER TABLE JOB_CONFIGURATIONS ALTER COLUMN ID RESTART WITH 1;

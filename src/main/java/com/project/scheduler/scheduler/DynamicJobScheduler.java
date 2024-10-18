@@ -1,15 +1,10 @@
 package com.project.scheduler.scheduler;
 
-import com.project.scheduler.entity.Job;
 import com.project.scheduler.services.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.TaskScheduler;
-import org.springframework.scheduling.support.CronTrigger;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
-import java.util.List;
-import java.util.concurrent.ScheduledFuture;
 
 //! Utilizziamo il componente solo per i scheduler che devono essere avviati direttamente all'istanza dell'applicazione
 @Component
@@ -27,9 +22,9 @@ public class DynamicJobScheduler {
     }
 
     // Recupero di tutti i JOB nel database e li avvia
-   /* @PostConstruct
-    public void scheduleJobs() {
-    }*/
+//    @PostConstruct
+//    public void scheduleJobs() {
+//    }
 
     // Esecuzione dei singoli job, questo metodo viene utilizzato per eseguire i JOB anche negli altri controller
     // no duplicazione di codice

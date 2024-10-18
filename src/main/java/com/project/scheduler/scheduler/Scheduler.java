@@ -17,7 +17,7 @@ public class Scheduler {
     }
 
     public void scheduledTask() {
-        dynamicJobScheduler.scheduleJobs();
+        // dynamicJobScheduler.scheduleJobs();
     }
     /* * Scheduler di default, avviata l'applicazione parte anche questo
      * Qui e dove possiamo inserire tutti gli scheduler e verranno avviati in automatico.

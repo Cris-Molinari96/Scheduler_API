@@ -1,5 +1,6 @@
 package com.project.scheduler.controller;
 
+import com.project.scheduler.dto.JobDto;
 import com.project.scheduler.entity.Job;
 import com.project.scheduler.scheduler.SchedulerService;
 import com.project.scheduler.utils.ResponseHttp;
@@ -31,8 +32,7 @@ public class JobController {
         this.schedulerService = schedulerService;
     }
     @GetMapping("/find-job/{idJob}")
-    @Operation(summary = "Ottieni un job memorizzato nel d" +
-            "atabase")
+    @Operation(summary = "Ottieni un job memorizzato nel database")
     public ResponseEntity<ResponseHttp> findJob(@PathVariable long idJob) {
         responseHttp = new ResponseHttp();
         responseHttp.setDataSource(jobService.getJob(idJob));
@@ -49,7 +49,7 @@ public class JobController {
 
     @PostMapping("/create-job")
     @Operation(summary = "Crea un job senza eseguirlo")
-    public ResponseEntity<ResponseHttp> insertJob(@RequestBody Job job) {
+    public ResponseEntity<ResponseHttp> insertJob(@RequestBody JobDto job) {
         if (job != null) {
             jobService.insertJob(job);
         } else {
@@ -60,9 +60,9 @@ public class JobController {
 
     @PostMapping("/create-and-execute-job")
     @Operation(summary = "Crea un job con esecuzione automatica")
-    public ResponseEntity<ResponseHttp> insertAndExecuteJob(@RequestBody Job job) {
+    public ResponseEntity<ResponseHttp> insertAndExecuteJob(@RequestBody JobDto job) {
         if (job != null) {
-            Job jobToBeExecuted = new Job(job.getJobName(),job.getCron(), job.getApiURL(), job.getBaseURL());
+            JobDto jobToBeExecuted = new JobDto(job.getJobName(),job.getCron(), job.getApiURL(), job.getBaseURL());
             schedulerService.scheduleJob(jobToBeExecuted);
             jobService.insertJob(job);
         } else {
