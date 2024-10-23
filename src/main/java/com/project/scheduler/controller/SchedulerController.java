@@ -3,7 +3,6 @@ package com.project.scheduler.controller;
 import com.project.scheduler.dto.JobDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.project.scheduler.entity.Job;
 import com.project.scheduler.scheduler.SchedulerService;
 import com.project.scheduler.services.JobService;
 import com.project.scheduler.utils.ResponseHttp;
@@ -33,15 +32,50 @@ public class SchedulerController {
             SchedulerService schedulerService
     ) {
         this.jobService = jobService;
-        this.schedulerService = schedulerService;
+    this.schedulerService = schedulerService;
     }
 
 
-    @PostMapping("/test-api")
-    @Operation(summary = "Crea un job temporaneo senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --> cron: */30 * * * * * ")
-    public ResponseEntity<ResponseHttp> creaTemporaryScheduler(@RequestBody JobDto job) {
+    @PostMapping("/test-get-api")
+    @Operation(summary = "Crea un job temporaneo di tipo get e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --> cron: */30 * * * * * ")
+    public ResponseEntity<ResponseHttp> creaTemporaryGetScheduler(@RequestBody JobDto job) {
         boolean response;
         if (job != null) {
+            job.setMethod("get");
+            response = schedulerService.createTemporaryScheduler(job);
+            if (response) {
+                responseHttp.setMessage("Lo scheduler " + job.getJobName() + " è stato creato con successo!");
+                return new ResponseEntity<>(responseHttp, HttpStatus.OK);
+            } else {
+                responseHttp.setMessage("Si è verificato un errore durante la creazione!");
+                return new ResponseEntity<>(responseHttp, HttpStatus.BAD_REQUEST);
+            }
+        } else {
+            responseHttp.setMessage("Non puoi avviare un qualcosa che è ''null' inserisci i campi id-job");
+            return new ResponseEntity<>(responseHttp, HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    /*
+    {
+  "cciaaMaster": "<string>",
+  "codice": "<string>",
+  "codiceAoo": "<string>",
+  "codiceEnte": "<string>",
+  "codiceRegistroProtocollo": "<string>",
+  "descrizione": "<string>",
+  "idEnte": "<integer>",
+  "nome": "<string>",
+  "dataDisattivazione": "<dateTime>"
+}
+*/
+
+    @PostMapping("/test-post-api")
+    @Operation(summary = "Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --> cron: */30 * * * * * ")
+    public ResponseEntity<ResponseHttp> creaTemporaryPostScheduler(@RequestBody JobDto job) {
+        boolean response;
+        if (job != null) {
+            job.setMethod("post");
             response = schedulerService.createTemporaryScheduler(job);
             if (response) {
                 responseHttp.setMessage("Lo scheduler " + job.getJobName() + " è stato creato con successo!");

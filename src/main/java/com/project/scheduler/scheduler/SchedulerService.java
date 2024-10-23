@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.TaskScheduler;
 import org.springframework.scheduling.support.CronTrigger;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.HashMap;
@@ -20,7 +21,7 @@ import java.util.concurrent.ScheduledFuture;
 
 // Questo gestore comunica con i controller
 
-@Component
+@Service
 public class SchedulerService {
 
     private static final Logger log = LoggerFactory.getLogger(SchedulerService.class);
@@ -114,16 +115,36 @@ public class SchedulerService {
         }
 
         try {
-            ScheduledFuture<?> scheduledTask = taskScheduler.schedule(
-                    () -> executeJob(job),
-                    new CronTrigger(job.getCron(), TimeZone.getTimeZone(TimeZone.getDefault().toZoneId()))
-            );
-            if (scheduledTask != null) {
-                jobRegistry.registerJob(jobName, scheduledTask);
-                log.info("Job {} schedulato", jobName);
-                return true;
-            } else {
-                log.error("Job non schedulato {}", jobName);
+            ScheduledFuture<?> scheduledTask = null;
+            if (job.getMethod().contains("get")) {
+                scheduledTask = taskScheduler.schedule(
+                        () -> executeGetJob(job),
+                        new CronTrigger(job.getCron(), TimeZone.getTimeZone(TimeZone.getDefault().toZoneId()))
+                );
+                if (scheduledTask != null) {
+                    jobRegistry.registerJob(jobName, scheduledTask);
+                    log.info("Job {} schedulato", jobName);
+                    return true;
+                } else {
+                    log.error("Job non schedulato {}", jobName);
+                    return false;
+                }
+            } else if (job.getMethod().contains("post")) {
+
+                scheduledTask = taskScheduler.schedule(
+                        () -> executePostJob(job),
+                        new CronTrigger(job.getCron(), TimeZone.getTimeZone(TimeZone.getDefault().toZoneId()))
+                );
+                if (scheduledTask != null) {
+                    jobRegistry.registerJob(jobName, scheduledTask);
+                    log.info("Job {} schedulato", jobName);
+                    return true;
+                } else {
+                    log.error("Job non schedulato {}", jobName);
+                    return false;
+                }
+            }else{
+                log.error("Job non schedulato {}", jobName , " Si è verificato un errore imprevisto!");
                 return false;
             }
         } catch (Exception e) {
@@ -132,12 +153,40 @@ public class SchedulerService {
         }
     }
 
-    private void executeJob(JobDto job) {
+    private void executeGetJob(JobDto job) {
         String jobName = job.getJobName();
         try {
             ResponseEntity<String> response = webClient.get()
                     .uri(job.getBaseURL() + job.getApiURL())
                     .header("Content-Type", "application/json")
+                    .retrieve()
+                    .toEntity(String.class)
+                    .block();
+            if (response.getStatusCode().isError()) {
+                String errorMessage = "Si è verificato un errore nella schedulazione: " + jobName + " with URL: " + job.getBaseURL() + job.getApiURL();
+                log.error(errorMessage);
+                jobRegistry.updateJobResponse(jobName, errorMessage);
+            } else {
+                String responseBody = response.getBody();
+                log.info("Job {} eseguito con successo", jobName);
+                jobRegistry.updateJobResponse(jobName, responseBody);
+            }
+
+        } catch (Exception e) {
+            String errorMessage = "Si è verificato un errore nell'esecuzione" + jobName + ": " + e.getMessage();
+            log.error(errorMessage);
+            jobRegistry.updateJobResponse(jobName, errorMessage);
+        }
+    }
+
+    public void executePostJob(JobDto jobDto) {
+        Job job = jobDto.custInJob(jobDto);
+        String jobName = job.getJobName();
+        try {
+            ResponseEntity<String> response = webClient.post()
+                    .uri(job.getBaseURL() + job.getApiURL())
+                    .header("Content-Type", "application/json")
+                    .bodyValue(job)
                     .retrieve()
                     .toEntity(String.class)
                     .block();
@@ -157,9 +206,27 @@ public class SchedulerService {
         }
     }
 
+
  /*   private void handleJobSuccess(String jobName, String responseBody) {
         log.info("Job {} completed successfully. Response: {}", jobName, responseBody);
     }
+
+    private void saveJobOutput(String jobName, String output) {
+        // Qui puoi implementare la logica per salvare l'output
+        // Ad esempio, puoi salvarlo in un database o in un file di log
+        // Per questo esempio, lo salveremo in una Map in memoria
+        jobOutputs.put(jobName + "-" + System.currentTimeMillis(), output);
+    }
+
+    public List<String> getJobOutputs(String jobName) {
+        return jobOutputs.entrySet().stream()
+                .filter(entry -> entry.getKey().startsWith(jobName))
+                .map(Map.Entry::getValue)
+                .collect(Collectors.toList());
+    }
+
+}
+
 
     private void handleJobFailure(String jobName, String errorMessage) {
         log.error("Job {} failed. Error: {}", jobName, errorMessage);
@@ -167,8 +234,8 @@ public class SchedulerService {
 
     public JobDto startOnlyJob(Long jobId) {
         Job job = jobService.getJob(jobId);
-        JobDto jobDto = new JobDto(job.getJobName(),job.getCron(), job.getApiURL(), job.getBaseURL());
-            return jobDto;
+        JobDto jobDto = new JobDto(job.getJobName(), job.getCron(), job.getApiURL(), job.getBaseURL());
+        return jobDto;
     }
 
     public boolean startAllJobs() {

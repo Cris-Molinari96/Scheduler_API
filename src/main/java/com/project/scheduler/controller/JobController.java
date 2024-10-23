@@ -62,7 +62,7 @@ public class JobController {
     @Operation(summary = "Crea un job con esecuzione automatica")
     public ResponseEntity<ResponseHttp> insertAndExecuteJob(@RequestBody JobDto job) {
         if (job != null) {
-            JobDto jobToBeExecuted = new JobDto(job.getJobName(),job.getCron(), job.getApiURL(), job.getBaseURL());
+            JobDto jobToBeExecuted = new JobDto(job.getJobName(), job.getCron(), job.getApiURL(), job.getBaseURL());
             schedulerService.scheduleJob(jobToBeExecuted);
             jobService.insertJob(job);
         } else {
@@ -74,10 +74,10 @@ public class JobController {
 
     @PutMapping("/update")
     @Operation(summary = "Aggiorna un job con esecuzione automatica")
-    public ResponseEntity<ResponseHttp> updateJob(@RequestBody Job job) {
+    public ResponseEntity<ResponseHttp> updateJob(@RequestBody JobDto jobDto) {
         responseHttp = new ResponseHttp();
         responseHttp.setMessage("Job aggiornato");
-        jobService.updateJob(job);
+        jobService.updateJob(jobDto);
         return new ResponseEntity<>(responseHttp, HttpStatus.OK);
     }
 

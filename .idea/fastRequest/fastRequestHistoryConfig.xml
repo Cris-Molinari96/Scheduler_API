@@ -17,6 +17,31 @@
               <option name="methodDescription" value="getResponseJob" />
               <option name="multipartKeyValueListJson" value="[]" />
               <option name="originUrl" value="/get-response/{jobName}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;jobName&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;jobName_6vwtp&quot;}]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/get-response/cdor-report" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/get-response/cdor-report&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:[{&quot;response&quot;:&quot;Recupero informazioni da cdor-service, status OK&quot;,&quot;timestamp&quot;:&quot;2024-10-18T15:48:00.667&quot;},{&quot;response&quot;:&quot;Recupero informazioni da cdor-service, status OK&quot;,&quot;timestamp&quot;:&quot;2024-10-18T15:48:30.018&quot;}],&quot;userCompany&quot;:null,&quot;message&quot;:null,&quot;code&quot;:null}" />
+          <option name="url" value="/get-response/cdor-report" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobRegistryController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="getResponseJob" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.JobRegistryController" />
+              <option name="method" value="getResponseJob" />
+              <option name="methodDescription" value="getResponseJob" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/get-response/{jobName}" />
               <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;jobName&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;jobName_jfm6a&quot;}]" />
               <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
               <option name="url" value="/get-response/infoCamere-report" />
@@ -510,33 +535,6 @@
           <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/start/1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
           <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Si è verificato un errore nella creazione del jobinfoCamere-report&quot;,&quot;code&quot;:null}" />
           <option name="url" value="/api/scheduler/start/1" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
-          <option name="code" value="400" />
-          <option name="enableEnv" value="local" />
-          <option name="enableProject" value="Scheduler_2.0" />
-          <option name="method" value="startJob" />
-          <option name="methodType" value="POST" />
-          <option name="name" value="Esegui un singolo job" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
-              <option name="method" value="startJob" />
-              <option name="methodDescription" value="Esegui un singolo job" />
-              <option name="methodType" value="POST" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/api/scheduler/start/{jobId}" />
-              <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;jobId&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
-              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
-              <option name="url" value="/api/scheduler/start/infoCamere-report" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[]" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/start/infoCamere-report&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;timestamp&quot;:&quot;2024-10-18T09:17:35.815+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;path&quot;:&quot;/api/scheduler/start/infoCamere-report&quot;}" />
-          <option name="url" value="/api/scheduler/start/infoCamere-report" />
         </ResponseHistory>
       </list>
     </option>

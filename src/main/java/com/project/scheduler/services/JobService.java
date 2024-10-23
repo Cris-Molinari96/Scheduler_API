@@ -23,7 +23,7 @@ public class JobService {
         List<Job> jobList = jobRepository.findAll();
         List<JobDto> jobDtoList = new ArrayList<JobDto>();
         for (Job job : jobList) {
-            jobDtoList.add(new JobDto(job.getJobName(),job.getCron(),job.getApiURL(),job.getBaseURL()));
+            jobDtoList.add(new JobDto(job.getJobName(),job.getCron(),job.getApiURL(),job.getBaseURL(),job.getMethod()));
         }
         return jobDtoList;
     }
@@ -33,19 +33,20 @@ public class JobService {
     }
 
     public void insertJob(JobDto jobDto) {
-        Job job = new Job(jobDto.getJobName(), jobDto.getCron(), jobDto.getApiURL(), jobDto.getBaseURL());
+        Job job = jobDto.custInJob(jobDto);
         jobRepository.save(job);
     }
 
-    public void updateJob(Job job) {
-        jobRepository.save(job);
+    public void insertMethod(String method){
+
+    }
+
+    public void updateJob(JobDto jobDto) {
+        jobRepository.save(jobDto.custInJob(jobDto));
     }
 
     public void deleteJob(Long id) {
         jobRepository.deleteById(id);
     }
 
-    public void scheduleJob(Job job) {
-
-    }
 }

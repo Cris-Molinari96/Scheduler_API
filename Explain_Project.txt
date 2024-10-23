@@ -1,20 +1,20 @@
 Nel progetto abbiamo un database che viene creato ogni volta che il programma viene avviato,
-sono stati creati due tipi diversi di scheduler, uno tipo che viene eseguito all'avvio dell'applicazione il secondo
+sono stati creati 2 tipi diversi di scheduler, uno tipo che viene eseguito all'avvio dell'applicazione il secondo
 viene gestito tramite l'esposizione di end-point, per ora possiamo:
+
+## Solo per il primo avvio devi decommentare in application prop. spring.sql.init.mode=never  e mettere always, dopo la prima istanza ripassa e creato il database metti never
+
 1. Effettuare le CRUD sul job
 2.  Richiamare uno job tramite il controller Scheduler per poter eseguire/fermare o ottenere uno status sullo o sugli scheduler attivi.
+3. persistenza nel database
+4. Avviare scheduler all'istanza del progetto
+5. Implementare swagger
+6. Aggiungere le Get,Post per testare api
+7. Memorizzare la response (in merito a questo esistono due mappe diverse una registra lo stato degli scheduler l'altra registra le risposte ottenute dalle api)
+8. Aggiungere un controller per ottenere le informazioni sullo stato degli scheduler e le risposte ed eventuali errori
 
-job configuration
-creare un job senza salvarlo nel database nello scheduler
-catturare la risposta e salvarla nel database
-
-
-Un controller che espone un api al quale gli viene passato un oggetto json,
-che gli applica un controllo e lo passa al service.
-il service estrae le informazioni e crea uno scheduler senza salvarlo nel database ma
-che viene registrato nella memoria e quindi c'è poi la possibilità di tenerne traccia.
+Aggiungere un campo nel db method
 
 
-Rest db
 TRUNCATE TABLE JOB_CONFIGURATIONS;
 ALTER TABLE JOB_CONFIGURATIONS ALTER COLUMN ID RESTART WITH 1;

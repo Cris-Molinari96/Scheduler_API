@@ -30,10 +30,14 @@ public class Job {
     @Column(name = "base_url", nullable = false)
     private String baseURL;
 
+    @Column(name = "method")
+    private String method;
+
     public Job(String jobName, String cron, String apiURL, String baseURL) {
         this.jobName = jobName;
         this.cron = cron;
         this.apiURL = apiURL;
         this.baseURL = baseURL;
     }
+
 }

@@ -1,8 +1,7 @@
 package com.project.scheduler.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.project.scheduler.entity.Job;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api-test")
@@ -22,6 +21,13 @@ public class ApiExposedController {
     @GetMapping("/test3")
     public String testApi3() {
         return "Recupero informazioni da cdor-service, status OK";
+    }
+
+
+    @PostMapping("/test-post")
+    public String testPost(@RequestBody Job job) {
+        System.out.println(job.getJobName().toString());
+        return "Recupero informazioni da post-job , status OK";
     }
 
 }

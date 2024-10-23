@@ -47,6 +47,7 @@ public class JobRegistryController {
     }
 
     @GetMapping("/get-response/{jobName}")
+    @Operation(summary = "Ottieni la risposta di un job")
     public ResponseEntity<ResponseHttp> getResponseJob(@PathVariable String jobName) {
         responseHttp = new ResponseHttp();
         List<JobResponse> response = jobRegistry.getJobResponse(jobName);
