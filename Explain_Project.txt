@@ -1,0 +1,70 @@
+Nel progetto abbiamo un database che viene creato ogni volta che il programma viene avviato,
+sono stati creati 2 tipi diversi di scheduler, uno tipo che viene eseguito all'avvio dell'applicazione il secondo
+viene gestito tramite l'esposizione di end-point, per ora possiamo:
+
+## Solo per il primo avvio devi decommentare in application prop. spring.sql.init.mode=never  e mettere always, dopo la prima istanza ripassa e creato il database metti never
+
+1. Effettuare le CRUD sul job
+2.  Richiamare uno job tramite il controller Scheduler per poter eseguire/fermare o ottenere uno status sullo o sugli scheduler attivi.
+3. persistenza nel database
+4. Avviare scheduler all'istanza del progetto
+5. Implementare swagger
+6. Aggiungere le Get,Post per testare api
+7. Memorizzare la response (in merito a questo esistono due mappe diverse una registra lo stato degli scheduler l'altra registra le risposte ottenute dalle api)
+8. Aggiungere un controller per ottenere le informazioni sullo stato degli scheduler e le risposte ed eventuali errori
+
+Aggiungere un campo nel db method
+
+
+TRUNCATE TABLE JOB_CONFIGURATIONS;
+ALTER TABLE JOB_CONFIGURATIONS ALTER COLUMN ID RESTART WITH 1;
+
+
+body e method
+{
+  "jobName": "test-job",
+  "cron": "*/30 * * * * *",
+  "apiURL": "/test-body-post",
+  "baseURL": "http://localhost:8080/api-test",
+  "method": "post",
+  "bodyObject": {
+    "utenteAutenticato": {
+      "codiceFiscale": "",
+      "nome": "",
+      "cognome": ""
+    },
+    "ricercaRichieste": {
+      "accountRichiedente": "T00064",
+      "codiceApplicazione": "CDOR",
+      "cciaaMaster": "BA",
+      "userIdRichiedente": "",
+      "paginazione": {
+        "pageNumber": 0,
+        "pageItems": 0,
+        "orderBy": "",
+        "ascending": true
+      },
+      "codiceFiscaleRichiedente": "",
+      "listaStatiPratica": [
+        "BOZZA_COMPILAZIONE"
+      ],
+      "intervalloDiCreazione": {
+        "dataDA": null,
+        "dataA": null
+      },
+      "intervalloDiInvio": {
+        "dataDA": null,
+        "dataA": null
+      },
+      "tipoPratica": "CO",
+      "denominazioneSoggettoRichiedente": "",
+      "codiceFiscaleImpresaRichiedente": "",
+      "idPratica": "",
+      "ricercaLike": {
+        "denominazioneSoggettoRichiedente": "",
+        "descrizioneEnte": "",
+        "idPratica": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestHistoryConfig">
+    <option name="historyList">
+      <list>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="insertAndExecuteJob" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job con esecuzione automatica" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.JobController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_f668r&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_9qjgn&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_bnqnd&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_lvi7r&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_sar8f&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="insertAndExecuteJob" />
+              <option name="methodDescription" value="Crea un job con esecuzione automatica" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/create-and-execute-job" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/create-and-execute-job" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/create-and-execute-job&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Job created successfully&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/create-and-execute-job" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="deleteJob" />
+          <option name="methodType" value="DELETE" />
+          <option name="name" value="Elimina un job" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.JobController" />
+              <option name="method" value="deleteJob" />
+              <option name="methodDescription" value="Elimina un job" />
+              <option name="methodType" value="DELETE" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/delete-job/{idJob}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;idJob&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/delete-job/5" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/delete-job/5&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;5  è stato eliminato&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/delete-job/5" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="insertJob" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job senza eseguirlo" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.JobController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_qr2os&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_xumyx&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_gae65&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_kxr23&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_6wyzz&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="insertJob" />
+              <option name="methodDescription" value="Crea un job senza eseguirlo" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/create-job" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/create-job" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/create-job&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Job created successfully&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/create-job" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="insertJob" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job senza eseguirlo" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.JobController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_i64j5&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_csrao&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_xc8lh&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_pw1ms&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_yntxp&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="insertJob" />
+              <option name="methodDescription" value="Crea un job senza eseguirlo" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/create-job" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/create-job" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/create-job&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Job created successfully&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/create-job" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="insertJob" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job senza eseguirlo" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.JobController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_6pwln&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_fwrld&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_m4ikg&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_w4td6&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_ahvck&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="insertJob" />
+              <option name="methodDescription" value="Crea un job senza eseguirlo" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/create-job" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/create-job" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/create-job&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Job created successfully&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/create-job" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="insertJob" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job senza eseguirlo" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.JobController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_iwuz0&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_norbu&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_pdqgw&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_a6864&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_zdxs5&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="insertJob" />
+              <option name="methodDescription" value="Crea un job senza eseguirlo" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/create-job" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/create-job" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/create-job&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Job created successfully&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/create-job" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="insertJob" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job senza eseguirlo" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.JobController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_bxsgw&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_irf5p&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_hfgse&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_24jyk&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_hc692&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="insertJob" />
+              <option name="methodDescription" value="Crea un job senza eseguirlo" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/create-job" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/create-job" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/create-job&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Job created successfully&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/create-job" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="insertJob" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job senza eseguirlo" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.JobController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_8a7kv&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_kql1r&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_zj8ay&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_7auvk&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_owtfu&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="insertJob" />
+              <option name="methodDescription" value="Crea un job senza eseguirlo" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/create-job" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/create-job" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/create-job&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Job created successfully&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/create-job" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="deleteJob" />
+          <option name="methodType" value="DELETE" />
+          <option name="name" value="Elimina un job" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.JobController" />
+              <option name="method" value="deleteJob" />
+              <option name="methodDescription" value="Elimina un job" />
+              <option name="methodType" value="DELETE" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/delete-job/{idJob}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;idJob&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/delete-job/5" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/delete-job/5&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;5  è stato eliminato&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/delete-job/5" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.JobController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="insertJob" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job senza eseguirlo" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.JobController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_q9rye&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_fdww9&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_3r3rt&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_12fpr&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_f5pkv&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="insertJob" />
+              <option name="methodDescription" value="Crea un job senza eseguirlo" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/create-job" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/create-job" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/create-job&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Job created successfully&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/create-job" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="creaTemporaryPostScheduler" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_7rtba&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_y7itz&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_5fk3k&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_h3ib5&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_xu5sl&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="creaTemporaryPostScheduler" />
+              <option name="methodDescription" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/test-post-api" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/test-post-api" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/test-post-api&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;dataSource&quot;:null,&quot;userCompany&quot;:null,&quot;message&quot;:&quot;Lo scheduler test-job è stato creato con successo!&quot;,&quot;code&quot;:null}" />
+          <option name="url" value="/api/scheduler/test-post-api" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="creaTemporaryPostScheduler" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_3we7i&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_cr0k1&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_nl3g8&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_kv17v&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_jfwhj&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="creaTemporaryPostScheduler" />
+              <option name="methodDescription" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/test-post-api" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/test-post-api" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/test-post-api&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2024-10-29T09:23:07.719+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/scheduler/test-post-api&quot;}" />
+          <option name="url" value="/api/scheduler/test-post-api" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="creaTemporaryPostScheduler" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_oqpe6&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_61j9i&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_a4xks&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_28w5c&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_6le07&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="creaTemporaryPostScheduler" />
+              <option name="methodDescription" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/test-post-api" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/test-post-api" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/test-post-api&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2024-10-29T09:22:36.363+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/scheduler/test-post-api&quot;}" />
+          <option name="url" value="/api/scheduler/test-post-api" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="creaTemporaryPostScheduler" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_f7o55&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_ptsep&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_5zcvg&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_1ii8x&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_0f4hd&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="creaTemporaryPostScheduler" />
+              <option name="methodDescription" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/test-post-api" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/test-post-api" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/test-post-api&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2024-10-29T09:18:26.672+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/scheduler/test-post-api&quot;}" />
+          <option name="url" value="/api/scheduler/test-post-api" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="creaTemporaryPostScheduler" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_vkmzo&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_nrp3e&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_4d8r0&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_oddgk&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_v8czc&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="creaTemporaryPostScheduler" />
+              <option name="methodDescription" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/test-post-api" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/test-post-api" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/test-post-api&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2024-10-29T09:16:21.066+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/scheduler/test-post-api&quot;}" />
+          <option name="url" value="/api/scheduler/test-post-api" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="creaTemporaryPostScheduler" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_xbkgo&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_6qd2x&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_02obg&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_2h6q6&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_9cme9&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="creaTemporaryPostScheduler" />
+              <option name="methodDescription" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/test-post-api" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/test-post-api" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/test-post-api&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2024-10-29T09:07:39.784+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/scheduler/test-post-api&quot;}" />
+          <option name="url" value="/api/scheduler/test-post-api" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="creaTemporaryPostScheduler" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_ue5ti&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_p7v90&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_7rxsh&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_jy453&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_us8s8&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="creaTemporaryPostScheduler" />
+              <option name="methodDescription" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/test-post-api" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/test-post-api" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/test-post-api&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2024-10-29T09:06:46.691+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/scheduler/test-post-api&quot;}" />
+          <option name="url" value="/api/scheduler/test-post-api" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="creaTemporaryPostScheduler" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_azvcd&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_fkj76&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_0hzig&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_y4tqp&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_roceo&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="creaTemporaryPostScheduler" />
+              <option name="methodDescription" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/test-post-api" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/test-post-api" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/test-post-api&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2024-10-29T09:03:28.937+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/scheduler/test-post-api&quot;}" />
+          <option name="url" value="/api/scheduler/test-post-api" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="creaTemporaryPostScheduler" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;jobName&quot;: &quot;test-job&quot;,&#10;  &quot;cron&quot;: &quot;*/30 * * * * *&quot;,&#10;  &quot;apiURL&quot;: &quot;/test-body-post&quot;,&#10;  &quot;baseURL&quot;: &quot;http://localhost:8080/api-test&quot;,&#10;  &quot;method&quot;: &quot;post&quot;,&#10;  &quot;bodyObject&quot;: {&#10;    &quot;utenteAutenticato&quot;: {&#10;      &quot;codiceFiscale&quot;: &quot;&quot;,&#10;      &quot;nome&quot;: &quot;&quot;,&#10;      &quot;cognome&quot;: &quot;&quot;&#10;    },&#10;    &quot;ricercaRichieste&quot;: {&#10;      &quot;accountRichiedente&quot;: &quot;T00064&quot;,&#10;      &quot;codiceApplicazione&quot;: &quot;CDOR&quot;,&#10;      &quot;cciaaMaster&quot;: &quot;BA&quot;,&#10;      &quot;userIdRichiedente&quot;: &quot;&quot;,&#10;      &quot;paginazione&quot;: {&#10;        &quot;pageNumber&quot;: 0,&#10;        &quot;pageItems&quot;: 0,&#10;        &quot;orderBy&quot;: &quot;&quot;,&#10;        &quot;ascending&quot;: true&#10;      },&#10;      &quot;codiceFiscaleRichiedente&quot;: &quot;&quot;,&#10;      &quot;listaStatiPratica&quot;: [&#10;        &quot;BOZZA_COMPILAZIONE&quot;&#10;      ],&#10;      &quot;intervalloDiCreazione&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;intervalloDiInvio&quot;: {&#10;        &quot;dataDA&quot;: null,&#10;        &quot;dataA&quot;: null&#10;      },&#10;      &quot;tipoPratica&quot;: &quot;CO&quot;,&#10;      &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;      &quot;codiceFiscaleImpresaRichiedente&quot;: &quot;&quot;,&#10;      &quot;idPratica&quot;: &quot;&quot;,&#10;      &quot;ricercaLike&quot;: {&#10;        &quot;denominazioneSoggettoRichiedente&quot;: &quot;&quot;,&#10;        &quot;descrizioneEnte&quot;: &quot;&quot;,&#10;        &quot;idPratica&quot;: &quot;&quot;&#10;      }&#10;    }&#10;  }&#10;}" />
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="jsonDocument" value="{&#10;  &quot;jobName&quot;: &quot;No comment,Value =jobName_bw11i&quot;,&#10;  &quot;cron&quot;: &quot;No comment,Value =cron_a7os6&quot;,&#10;  &quot;apiURL&quot;: &quot;No comment,Value =apiURL_3na98&quot;,&#10;  &quot;baseURL&quot;: &quot;No comment,Value =baseURL_llemy&quot;,&#10;  &quot;method&quot;: &quot;No comment,Value =method_d7ogk&quot;,&#10;  &quot;bodyObject&quot;: {}&#10;}" />
+              <option name="method" value="creaTemporaryPostScheduler" />
+              <option name="methodDescription" value="creaTemporaryPostScheduler" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/first-test-post-api" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/first-test-post-api" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/first-test-post-api&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 729&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;jobName&quot;:&quot;test-job&quot;,&quot;cron&quot;:&quot;*/30 * * * * *&quot;,&quot;baseURL&quot;:&quot;http://localhost:8080/api-test&quot;,&quot;apiURL&quot;:&quot;/test-body-post&quot;,&quot;method&quot;:&quot;post&quot;,&quot;bodyObject&quot;:{&quot;utenteAutenticato&quot;:{&quot;cognome&quot;:&quot;&quot;,&quot;nome&quot;:&quot;&quot;,&quot;codiceFiscale&quot;:&quot;&quot;},&quot;ricercaRichieste&quot;:{&quot;intervalloDiCreazione&quot;:{},&quot;cciaaMaster&quot;:&quot;BA&quot;,&quot;tipoPratica&quot;:&quot;CO&quot;,&quot;listaStatiPratica&quot;:[&quot;BOZZA_COMPILAZIONE&quot;],&quot;userIdRichiedente&quot;:&quot;&quot;,&quot;codiceFiscaleImpresaRichiedente&quot;:&quot;&quot;,&quot;accountRichiedente&quot;:&quot;T00064&quot;,&quot;codiceApplicazione&quot;:&quot;CDOR&quot;,&quot;paginazione&quot;:{&quot;pageNumber&quot;:0,&quot;pageItems&quot;:0,&quot;orderBy&quot;:&quot;&quot;,&quot;ascending&quot;:true},&quot;codiceFiscaleRichiedente&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;intervalloDiInvio&quot;:{},&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;,&quot;ricercaLike&quot;:{&quot;descrizioneEnte&quot;:&quot;&quot;,&quot;idPratica&quot;:&quot;&quot;,&quot;denominazioneSoggettoRichiedente&quot;:&quot;&quot;}}}}&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2024-10-29T08:52:07.372+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/api/scheduler/first-test-post-api&quot;}" />
+          <option name="url" value="/api/scheduler/first-test-post-api" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+          <option name="code" value="415" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="Scheduler_2.0" />
+          <option name="method" value="unregisterAllJobs" />
+          <option name="methodType" value="POST" />
+          <option name="name" value="Ferma tutti i jobs" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.project.scheduler.controller.SchedulerController" />
+              <option name="method" value="unregisterAllJobs" />
+              <option name="methodDescription" value="Ferma tutti i jobs" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/scheduler/test-post-api" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+              <option name="url" value="/api/scheduler/test-post-api" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8080/api/scheduler/test-post-api&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2024.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2024-10-28T16:35:46.922+00:00&quot;,&quot;status&quot;:415,&quot;error&quot;:&quot;Unsupported Media Type&quot;,&quot;path&quot;:&quot;/api/scheduler/test-post-api&quot;}" />
+          <option name="url" value="/api/scheduler/test-post-api" />
+        </ResponseHistory>
+      </list>
+    </option>
+  </component>
+</project>

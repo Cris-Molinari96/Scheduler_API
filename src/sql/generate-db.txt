@@ -1,0 +1,10 @@
+create database scheduler_job;
+use scheduler_job;
+
+CREATE TABLE jobs (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    job_name VARCHAR(255) NOT NULL,
+    api_url VARCHAR(255) NOT NULL,
+    base_url VARCHAR(255) NOT NULL,
+    cron VARCHAR(50) NOT NULL
+);

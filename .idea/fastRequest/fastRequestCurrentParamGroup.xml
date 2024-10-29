@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestCurrentParamGroup">
+    <option name="bodyParamMap">
+      <map>
+        <entry key="job">
+          <value>
+            <Object />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="clasDescription" value="JobController" />
+    <option name="className" value="com.project.scheduler.controller.JobController" />
+    <option name="filePath" value="" />
+    <option name="method" value="insertAndExecuteJob" />
+    <option name="methodDescription" value="Crea un job con esecuzione automatica" />
+    <option name="methodType" value="POST" />
+    <option name="module" value="Scheduler_2.0" />
+    <option name="originUrl" value="/create-and-execute-job" />
+    <option name="responseParamMap">
+      <map>
+        <entry key="return">
+          <value>
+            <Object />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
+    <option name="url" value="/create-and-execute-job" />
+  </component>
+</project>
