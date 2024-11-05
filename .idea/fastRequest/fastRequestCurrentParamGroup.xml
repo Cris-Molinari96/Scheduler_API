@@ -10,14 +10,13 @@
         </entry>
       </map>
     </option>
-    <option name="clasDescription" value="JobController" />
-    <option name="className" value="com.project.scheduler.controller.JobController" />
+    <option name="className" value="com.project.scheduler.controller.SchedulerController" />
     <option name="filePath" value="" />
-    <option name="method" value="insertAndExecuteJob" />
-    <option name="methodDescription" value="Crea un job con esecuzione automatica" />
+    <option name="method" value="creaTemporaryPostScheduler" />
+    <option name="methodDescription" value="Crea un job temporaneo di tipo post e senza salvarlo nel database, esempio settaggio cron che viene eseguito ogni 30s  --&gt; cron: */30 * * * * * " />
     <option name="methodType" value="POST" />
     <option name="module" value="Scheduler_2.0" />
-    <option name="originUrl" value="/create-and-execute-job" />
+    <option name="originUrl" value="/api/scheduler/test-post-api" />
     <option name="responseParamMap">
       <map>
         <entry key="return">
@@ -28,6 +27,6 @@
       </map>
     </option>
     <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{}}" />
-    <option name="url" value="/create-and-execute-job" />
+    <option name="url" value="/api/scheduler/test-post-api" />
   </component>
 </project>
